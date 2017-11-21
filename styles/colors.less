@@ -1,0 +1,24 @@
+// Hues
+@hue-1:   rgb(200, 125, 165);
+@hue-2:   rgb(200, 160, 075);
+@hue-3:   darken(rgb(230, 195, 125), 15%);
+@hue-4:   rgb(165, 180, 120);
+@hue-5:   rgb(125, 160, 080);
+@hue-6:   darken(rgb(105, 195, 190), 15%);
+@hue-7:   rgb(070, 155, 145);
+@hue-8:   rgb(155, 140, 175);
+
+// Shades
+@shade-1: lighten(rgb(225, 225, 225), 2.5%);
+@shade-2: mix(@shade-1, @shade-6, 80%);
+@shade-3: mix(@shade-1, @shade-6, 60%);
+@shade-4: mix(@shade-1, @shade-6, 40%);
+@shade-5: mix(@shade-1, @shade-6, 20%);
+@shade-6: rgb(055, 055, 060);
+
+// Base colors
+@syntax-fg:     @shade-6;
+@syntax-bg:     @shade-1;
+@syntax-gutter: darken(@syntax-fg, 25%);
+@syntax-guide:  fade(@syntax-fg, 15%);
+@syntax-accent: @hue-6;

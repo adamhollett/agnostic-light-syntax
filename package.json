@@ -1,0 +1,15 @@
+{
+  "name": "agnostic-light-syntax",
+  "theme": "syntax",
+  "version": "1.0.0",
+  "description": "A light, muted syntax theme without too much shine.",
+  "keywords": [
+    "light",
+    "syntax"
+  ],
+  "repository": "https://github.com/admhlt/agnostic-light-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  }
+}

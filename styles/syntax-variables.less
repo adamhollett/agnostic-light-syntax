@@ -1,0 +1,72 @@
+@import 'colors.less';
+
+// Official syntax variables -----------------------------------
+
+// General colors
+@syntax-text-color:            @syntax-fg;
+@syntax-cursor-color:          @syntax-accent;
+@syntax-selection-color:       lighten(@syntax-background-color, 10%);
+@syntax-selection-flash-color: @syntax-accent;
+@syntax-background-color:      @syntax-bg;
+
+// Guide colors
+@syntax-wrap-guide-color:          @syntax-guide;
+@syntax-indent-guide-color:        @syntax-guide;
+@syntax-invisible-character-color: @syntax-guide;
+
+// For find and replace markers
+@syntax-result-marker-color:          fade(@syntax-accent, 24%);
+@syntax-result-marker-color-selected: @syntax-accent;
+
+// Gutter colors
+@syntax-gutter-text-color:                @syntax-gutter;
+@syntax-gutter-text-color-selected:       @syntax-fg;
+@syntax-gutter-background-color:          @syntax-bg; // unused
+@syntax-gutter-background-color-selected: lighten(@syntax-bg, 2%);
+
+// Language entities
+@syntax-color-text:       @shade-6;
+@syntax-color-comment:    @shade-3;
+@syntax-color-string:     @hue-3;
+@syntax-color-number:     @syntax-color-text;
+@syntax-color-regexp:     @hue-4;
+@syntax-color-constant:   @syntax-color-text;
+@syntax-color-variable:   @syntax-color-text;
+@syntax-color-keyword:    @hue-1;
+@syntax-color-class:      @hue-6;
+@syntax-color-function:   @hue-6;
+@syntax-color-method:     @hue-6;
+@syntax-color-parameter:  @hue-7;
+@syntax-color-tag:        @syntax-color-text;
+@syntax-color-attribute:  @hue-6;
+@syntax-color-operator:   @syntax-color-text;
+@syntax-color-selector:   @hue-3;
+
+@syntax-color-property:   @syntax-fg;
+@syntax-color-value:      @syntax-fg;
+@syntax-color-import:     @hue-3;
+@syntax-color-snippet:    @hue-4;
+
+// Markup
+@syntax-color-changed:    @hue-3;
+@syntax-color-inserted:   @hue-4;
+@syntax-color-deleted:    @hue-1;
+@syntax-color-heading:    @hue-6;
+@syntax-color-link:       @hue-8;
+@syntax-color-quote:      @shade-3;
+@syntax-color-raw:        @shade-5;
+
+// Git colors
+@syntax-color-renamed:    @hue-6;
+@syntax-color-added:      @hue-4;
+@syntax-color-modified:   @hue-3;
+@syntax-color-removed:    @hue-1;
+
+// Custom Syntax Variables -----------------------------------
+// Don't use in packages
+
+@syntax-cursor-line:   fade(@syntax-accent, 5%); // Must be transparent
+@syntax-deprecated-fg: darken(@syntax-color-modified, 50%);
+@syntax-deprecated-bg: @syntax-color-modified;
+@syntax-illegal-fg:    white;
+@syntax-illegal-bg:    @syntax-color-removed;
