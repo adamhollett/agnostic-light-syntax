@@ -1,4 +1,4 @@
-## Agnostic Light syntax theme
+## [Agnostic Light Syntax](https://atom.io/themes/agnostic-light-syntax)
 
 Agnostic Light is a muted syntax theme for Atom inspired by [eclectic-syntax](https://github.com/blaqbern/eclectic-syntax). It supports many languages and features meaningful colours without too much shine.
 
